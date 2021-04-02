@@ -25,7 +25,7 @@ abstract class HighWay
     {
         return $this->nbLane;
     }
-    public function setNbLane(int $nbLane): HighWay
+    final public function setNbLane(int $nbLane): HighWay
     {
         $this->nbLane = $nbLane;
         return $this;
@@ -34,7 +34,7 @@ abstract class HighWay
     {
         return $this->maxSpeed;
     }
-    public function setMaxSpeed(int $maxSpeed): HighWay
+     final public function setMaxSpeed(int $maxSpeed): HighWay
     {
         $this->maxSpeed = $maxSpeed;
         return $this;
